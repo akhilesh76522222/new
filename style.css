@@ -1,0 +1,125 @@
+/* Global Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f4; /* Play Store जैसा हल्का ग्रे बैकग्राउंड */
+    color: #202124;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px; /* विवरण पेज के लिए मध्यम चौड़ाई */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.app-detail-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Header Section (Icon, Name, Dev) */
+.header-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.large-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px; /* गोल कोने */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.app-name {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.developer-name, .rating-info {
+    font-size: 16px;
+    color: #5f6368;
+    margin-bottom: 3px;
+}
+
+/* Install Button */
+.download-area {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.install-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #0f9d58; /* Google Play Store हरा रंग */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.install-button:hover {
+    background-color: #0c8046;
+}
+
+/* Screenshots */
+.section-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3c4043;
+    border-bottom: 1px solid #dadce0;
+    padding-bottom: 5px;
+}
+
+.screenshots-container {
+    display: flex;
+    overflow-x: auto; /* हॉरिजॉन्टल स्क्रॉलिंग सक्षम करें */
+    gap: 15px;
+    padding: 10px 0;
+    -ms-overflow-style: none; /* IE और Edge के लिए स्क्रॉलबार छिपाएँ */
+    scrollbar-width: none; /* Firefox के लिए स्क्रॉलबार छिपाएँ */
+}
+
+/* Webkit-आधारित ब्राउज़र के लिए स्क्रॉलबार छिपाएँ (Chrome, Safari) */
+.screenshots-container::-webkit-scrollbar {
+    display: none;
+}
+
+.screenshots-container img {
+    width: auto;
+    height: 350px; /* स्क्रीनशॉट की ऊंचाई सेट करें */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* इमेज को छोटा होने से रोकें */
+}
+
+/* Description Box */
+.description-box {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #5f6368;
+    margin-top: 30px;
+}
